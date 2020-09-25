@@ -13,11 +13,14 @@ public class AddressBook {
         buddies.add(buddy);
     }
 
-    public void removeBuddy(int index) {
-        buddies.remove(index);
+    public void removeBuddy(BuddyInfo buddy) {
+        buddies.remove(buddy);
     }
 
     public static void main(String[] args) {
-        System.out.println("Address book");
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", 613);
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
