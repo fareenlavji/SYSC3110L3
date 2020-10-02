@@ -17,6 +17,7 @@ public class AddressBook {
         buddies.remove(buddy);
     }
 
+    /* Just experimenting, don't mind me */
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Rhea", "Chubz", 23);
         AddressBook addressBook = new AddressBook();
